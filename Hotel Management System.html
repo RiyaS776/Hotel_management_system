@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('registration')">Register</a></li>
+                <li><a href="#" onclick="showSection('rooms')">Available Rooms</a></li>
+                <li><a href="#" onclick="showSection('checkout')">Checkout</a></li>
+                <li><a href="#" onclick="showSection('items')">Add Item</a></li>
+                <li><a href="#" onclick="showSection('availability')">Check Availability</a></li>
+                <li><a href="#" onclick="showSection('sales')">Daily Sales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Registration Section -->
+        <section id="registration">
+            <h2>Customer Registration</h2>
+            <form id="registration-form">
+                <label for="reg-name">Full Name:</label>
+                <input type="text" id="reg-name" required>
+                
+                <label for="reg-phone">Phone Number:</label>
+                <input type="tel" id="reg-phone" required>
+                
+                <label for="reg-email">Email Address:</label>
+                <input type="email" id="reg-email" required>
+                
+                <label for="reg-address">Address:</label>
+                <textarea id="reg-address" required></textarea>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        
+
+
+        <!-- Available Rooms Section -->
+        <section id="rooms" style="display:none;">
+            <h2>Available Rooms</h2>
+            <div class="room">
+                <h3>Deluxe Room</h3>
+                <p>Price: $200/night</p>
+                <button onclick="bookRoom('Deluxe Room')">Book Now</button>
+            </div>
+            <div class="room">
+                <h3>Standard Room</h3>
+                <p>Price: $150/night</p>
+                <button onclick="bookRoom('Standard Room')">Book Now</button>
+            </div>
+        </section>
+
+        <!-- Checkout Section -->
+        <section id="checkout" style="display:none;">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <label for="checkout-email">Email:</label>
+                <input type="email" id="checkout-email" required>
+                
+                <button type="submit">Checkout</button>
+            </form>
+        </section>
+
+        <!-- Add Item Section -->
+        <section id="items" style="display:none;">
+            <h2>Add Item</h2>
+            <form id="item-form">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" required>
+                
+                <label for="item-price">Item Price:</label>
+                <input type="number" id="item-price" required>
+                
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <!-- Check Room Availability Section -->
+        <section id="availability" style="display:none;">
+            <h2>Check Room Availability</h2>
+            <form id="availability-form">
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" required>
+                
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" required>
+                
+                <button type="submit">Check Availability</button>
+            </form>
+        </section>
+
+        <!-- Daily Sales Section -->
+        <section id="sales" style="display:none;">
+            <h2>Daily Sales</h2>
+            <button onclick="viewSales()">View Daily Sales</button>
+            <div id="sales-report"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Innovators</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/*body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: url('hotel background.jpg') ;
+
+}*/
+
+/*header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+*/
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    
+    margin-top: 80px;
+    margin-left: 375px;
+}
+
+section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h2 {
+    color: #35424a;
+}
+
+.room {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.room h3 {
+    margin: 0;
+}
+
+.room button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.room button:hover {
+    background: #4a5b68;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+/*footer {
+    text-align: center;
+    padding: 20px;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}*/
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack the main content and footer vertically */
+    background: url('hotel background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333; /* Adjust text color for readability */
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+/*
+main {
+    flex: 1; /* Allow main to grow and fill available space 
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(53, 66, 74, 0.8);
+    color: #ffffff;
+    position: relative; /* Keep the footer relative to the rest of the layout */
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+/* Other styles remain the same... */
